@@ -22,8 +22,13 @@ async function buscarPostUsers(){
         document.getElementById("elemento").innerHTML += "<div class='card'>" + 
             "<h2>" + post.title  + "</h2>" +
             "<h3>" + userName + "</h3>" +
-            "<div>" + post.body + "</div>"
-            + "</div>";
+            "<div>" + post.body + "</div>" +
+            "<br>" +
+            "<button>Editar</button>" +
+            
+            "<button>Excluir</button>" +
+
+            "</div>";
     }
 }
 

@@ -8,7 +8,7 @@ async function buscarRota(url){
     }
 }
 
-async function main(){
+async function buscarPostUsers(){
     const users = await buscarRota(urlAPI + "/users");
     const posts = await buscarRota(urlAPI + "/posts");
 
@@ -21,10 +21,10 @@ async function main(){
 
         document.getElementById("elemento").innerHTML += "<div class='card'>" + 
             "<h2>" + post.title  + "</h2>" +
-            "<h3>" + userName + "<h3>" +
+            "<h3>" + userName + "</h3>" +
             "<div>" + post.body + "</div>"
             + "</div>";
     }
 }
 
-main();
+buscarPostUsers();
